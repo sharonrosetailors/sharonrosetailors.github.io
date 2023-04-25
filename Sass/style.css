@@ -17,7 +17,7 @@ body {
 }
 
 .products {
-  min-width: 18rem;
+  width: 18rem;
 }
 
 .customer-grids {
@@ -55,6 +55,14 @@ img {
   }
   .lg-customers {
     width: 25rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .lg-customers {
+    width: 100%;
+  }
+  .products {
+    width: 100%;
   }
 }
 .USP {
