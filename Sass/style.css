@@ -2,10 +2,17 @@ body {
   background-color: rgb(27, 22, 95);
 }
 
-.timer-bar {
-  height: 100%;
-  background-color: cyan;
-  transition: width 5s;
+.intro-section {
+  color: white;
+  margin-bottom: 3em;
+}
+
+h1 {
+  margin: 3em 0em 0.5em 0em;
+}
+
+.contact-info i {
+  font-size: 5em; /* Adjust the font size to your liking */
 }
 
 .product-grids {
@@ -40,9 +47,8 @@ img {
 }
 
 .owl-carousel .owl-item {
-  max-height: 300px; /* adjust the value as needed */
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .lg-customers {
