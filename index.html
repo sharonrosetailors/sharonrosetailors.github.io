@@ -15,8 +15,9 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
+    <nav class="container navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+      
+        
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -25,24 +26,27 @@
             
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link 1</a>
+                    <a class="nav-link" href="#product_section">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link 2</a>
+                    <a class="nav-link" href="#Client_section">Clients</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link 3</a>
+                    <a class="nav-link" href="#Contact_us_section">Contact Us</a>
                 </li>
             </ul>
         </div>
 
-        </div>
+        
+        <a class="navbar-brand" href="#">
+    Sharon Rose
+  </a>
     
     </nav>
 
 
   <div class="main  container">
-    <!-- <div class="container-fluid intro-section">
+    <div class="container-fluid intro-section">
   <div class="col align-items-center text-center">
     <div class="col-md-6">
       <h2>Welcome to  our shop</h2>
@@ -54,7 +58,7 @@
       <button class="btn btn-primary">Learn More</button>
     </div>
   </div>
-</div> -->
+</div>
 
 <div class="container-fluid text-center">
       <h2>Welcome to  our shop</h2>
@@ -95,7 +99,7 @@
 
 
     <h1>Our products</h1>
-    <div class="product-grids">
+    <div class="product-grids" id="product_section">
        <div class="card products" style="width: 18rem;">
         <img src="images/dresses/01.jpg" class="card-img-top" alt="...">
         <div class="card-body text-bg-dark light-text">
@@ -162,11 +166,12 @@
 
 
     <!-- WARNING, THERE IS A HUGE OVERFLOW PROBLEM WITH USP, KEEP AN EYE FOR IT -->
+ <h1 class=" mb-5">Why Choose Us?</h1>
+
  <div class="USP">
 
     <!-- <h1>Why choose us ?</h1> -->
-      <h1 class="text-center mb-5">Why Choose Us?</h1>
-  <div class="row gx-5">
+       <div class="row gx-5">
     <div class="col-md-4">
       <div class="card ">
         <div class="card-body  text-bg-dark light-text">
@@ -197,9 +202,9 @@
  </div>
 
 
-  <div class="customers">
-    <h2 class="text-center mb-5">Proud to Serve</h2>
-    
+  <h1 class="mb-5">Our Clients</h1>
+<div class="customers" id="Client_section">
+        
     <div class="customer-grids">
       <div class="card  lg-customers" >
         <img src="images/companies/01_yamaha.webp" class="card-img-top" alt="...">
@@ -250,9 +255,9 @@
 
 
   </div>   
-<section id="contact" class="bg-dark text-light py-5">
+<section id="contact" class="bg-dark text-light py-5" >
   
-  <div class="container">
+  <div class="container" id="Contact_us_section">
     
 
     <div class="row">
@@ -287,8 +292,9 @@
     </div>
 
       <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14884.270343249772!2d-122.4312977!3d37.7739729!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMDInNTMuOSJOIDxzdGF0ZT5Kb3NlIFNhbiBTYWwsIFNhbiBTYW4gTWVybmluZywgQ2FsaWZvcm5pYSwgQ0EgOTAwMDI!5e0!3m2!1sen!2sus!4v1619555013359!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <button class="btn btn-primary mt-3" onclick="window.open('https://www.google.com/maps?q=37.7739729,-122.4312977')">View on Google Maps</button>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15771.249827798349!2d78.153054!3d8.803683!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b03ef8ea96f067f%3A0xd8ddde05d97a0f74!2sSharon%20Rose%20Tailors!5e0!3m2!1sen!2sin!4v1683673207279!5m2!1sen!2sin" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <button class="btn btn-primary mt-3" onclick="window.open('https://www.google.com/maps?q=37.7739729,-122.4312977https://www.google.com/maps?ll=8.803683,78.153054&z=14&t=m&hl=en&gl=IN&mapclient=embed&cid=15626890398750347124')">View on Google Maps</button>
       </div>
 
   </div>
