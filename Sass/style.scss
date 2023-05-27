@@ -2,6 +2,14 @@
 body {
     background-color: rgb(27, 22, 95);
     color: white;
+    
+}
+
+.navbar {
+
+  position: sticky;
+  top: 0px;
+  z-index: 10;
 }
 
 .intro-section{
@@ -63,7 +71,9 @@ h1{
 
 }
 
-
+.bootstrap-card {
+  z-index: 1; /* Lower z-index value */
+}
 
 
 
@@ -110,6 +120,30 @@ img{
   max-width: 94%;
 }
 
+a {
+
+  color: white;
+  text-decoration: none
+}
+
+.contact {
+
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover
+{   
+  text-decoration: none;
+   color: white;
+}
+
+button:hover,  .navbar-toggler-icon:hover, .contact:hover {
+
+  transform: scale(1.1) ;
+  
+}
 
 // body{
 //   overflow-x: hidden;
