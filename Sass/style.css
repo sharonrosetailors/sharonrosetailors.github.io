@@ -3,6 +3,12 @@ body {
   color: white;
 }
 
+.navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+
 .intro-section {
   color: white;
   margin-bottom: 3em;
@@ -35,6 +41,10 @@ h1 {
   grid-gap: 2rem;
   justify-items: center;
   margin: 4rem 0;
+}
+
+.bootstrap-card {
+  z-index: 1; /* Lower z-index value */
 }
 
 .other-brands {
@@ -74,4 +84,24 @@ img {
 }
 .USP {
   max-width: 94%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+button:hover, .navbar-toggler-icon:hover, .contact:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */
