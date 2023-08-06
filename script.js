@@ -29,5 +29,24 @@ console.log("hi there")
 });
 
 
+document.querySelector("#product_link").addEventListener('click',  async () => {
+  
+  document.querySelector('#toggle_products').click()
+  
+  // Wait for a certain time (e.g., x milliseconds) before scrolling
+  await new Promise(resolve => setTimeout(resolve, 500));
+
+  const productSection = document.querySelector("#product_section");
+
+  if (productSection) {
+    productSection.scrollIntoView({
+      behavior: "smooth",
+      block: "end"
+    });
+  }
+
+
+})
+
 
 
