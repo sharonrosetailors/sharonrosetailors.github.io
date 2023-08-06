@@ -38,9 +38,16 @@ h1 {
   max-width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 1rem; /* Adjust the gap as needed */
   justify-items: center;
-  margin: 4rem 0;
+  margin: 2rem 0; /* Adjust the margin as needed */
+}
+
+.lg-customers {
+  width: 100%;
+  max-width: 23rem; /* Adjust the maximum width as needed */
+  height: auto;
+  margin-bottom: 4em;
 }
 
 .bootstrap-card {
@@ -48,42 +55,52 @@ h1 {
 }
 
 .other-brands {
+  max-height: 350px;
   border: solid black 5px;
-  padding: 0px;
+  padding: 0;
   border-radius: 5px;
 }
 
-img {
-  max-height: 100%;
+.owl-carousel {
+  max-height: 100% !important;
+}
+
+.owl-carousel .owl-stage {
+  display: flex; /* Allow items to grow/shrink properly */
 }
 
 .owl-carousel .owl-item {
-  -o-object-fit: fill;
-     object-fit: fill;
+  max-height: 340px !important; /* Adjust the maximum height as needed */
+  flex: 0 0 auto; /* Prevent flex items from growing or shrinking */
+}
+
+.item-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.item-brand img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .lg-customers {
   width: 30rem;
 }
 
-@media (max-width: 768px) {
-  .customer-grids {
-    grid-template-columns: 1fr;
-  }
-  .lg-customers {
-    width: 25rem;
-  }
-}
-@media screen and (max-width: 767px) {
-  .lg-customers {
-    width: 100%;
-  }
-  .products {
-    width: 100%;
-  }
-}
 .USP {
   max-width: 94%;
+}
+
+.USP .card {
+  height: 11em;
 }
 
 a {
@@ -125,6 +142,14 @@ button:hover, .navbar-toggler-icon:hover, .contact:hover {
   height: 100%;
 }
 
+@media (max-width: 768px) {
+  .customer-grids {
+    grid-template-columns: 1fr;
+  }
+  .lg-customers {
+    width: 25rem;
+  }
+}
 @media screen and (max-width: 767px) {
   /* Styles for mobile view */
   .yt-frame {
@@ -140,5 +165,15 @@ button:hover, .navbar-toggler-icon:hover, .contact:hover {
     height: 20em;
     overflow: hidden;
     margin: 2em 0em 2em 0em;
+  }
+  .USP .card {
+    height: 10em;
+    margin-bottom: 2em;
+  }
+  .lg-customers {
+    width: 100%;
+  }
+  .products {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

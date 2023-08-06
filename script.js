@@ -18,16 +18,35 @@ console.log("hi there")
           items:1
         },
         600:{
-          items:2
+          items:3
         },
         1000:{
-          items:3
+          items:4
         }
       }
     })
   });// Owl Carousel initialization code here
 });
 
+
+document.querySelector("#product_link").addEventListener('click',  async () => {
+  
+  document.querySelector('#toggle_products').click()
+  
+  // Wait for a certain time (e.g., x milliseconds) before scrolling
+  await new Promise(resolve => setTimeout(resolve, 400));
+
+  const productSection = document.querySelector("#product_section");
+
+  if (productSection) {
+    productSection.scrollIntoView({
+      behavior: "smooth",
+      block: "end"
+    });
+  }
+
+
+})
 
 
 
