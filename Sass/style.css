@@ -38,9 +38,15 @@ h1 {
   max-width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 1rem; /* Adjust the gap as needed */
   justify-items: center;
-  margin: 4rem 0;
+  margin: 2rem 0; /* Adjust the margin as needed */
+}
+
+.lg-customers {
+  width: 100%;
+  max-width: 23rem; /* Adjust the maximum width as needed */
+  height: auto;
 }
 
 .bootstrap-card {
