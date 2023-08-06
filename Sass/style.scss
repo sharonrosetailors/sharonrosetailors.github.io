@@ -70,6 +70,7 @@ h1{
   width: 100%; 
   max-width: 23rem; /* Adjust the maximum width as needed */
   height: auto; 
+  margin-bottom: 4em;
 }
 
 .bootstrap-card {
@@ -125,27 +126,17 @@ h1{
   width: 30rem;
 }
 
-@media (max-width: 768px) {
-  .customer-grids {
-    grid-template-columns: 1fr;
-  }
 
-  .lg-customers{
-    width: 25rem;
-  }
-}
-@media screen and (max-width: 767px) {
- .lg-customers{
-  width: 100%;
- } 
- .products{
-  width: 100%;
- }
-}
 
 .USP {
   
   max-width: 94%;
+  
+}
+
+.USP .card{
+
+  height: 11em;
 }
 
 a {
@@ -198,6 +189,17 @@ button:hover,  .navbar-toggler-icon:hover, .contact:hover {
   //padding-bottom: 30%; 
 }
 
+@media (max-width: 768px) {
+  .customer-grids {
+    grid-template-columns: 1fr;
+  }
+
+  .lg-customers{
+    width: 25rem;
+  }
+}
+
+
 @media screen and (max-width: 767px) {
   /* Styles for mobile view */
   .yt-frame {
@@ -218,6 +220,20 @@ button:hover,  .navbar-toggler-icon:hover, .contact:hover {
     margin: 2em 0em 2em 0em;
   
   }
+
+  .USP .card{
+ 
+    height: 10em;
+    margin-bottom: 2em;
+  }
+
+  .lg-customers{
+    width: 100%;
+   } 
+   
+   .products{
+    width: 100%;
+   }
 
 }
 

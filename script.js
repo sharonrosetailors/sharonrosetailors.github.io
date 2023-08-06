@@ -34,7 +34,7 @@ document.querySelector("#product_link").addEventListener('click',  async () => {
   document.querySelector('#toggle_products').click()
   
   // Wait for a certain time (e.g., x milliseconds) before scrolling
-  await new Promise(resolve => setTimeout(resolve, 500));
+  await new Promise(resolve => setTimeout(resolve, 400));
 
   const productSection = document.querySelector("#product_section");
 
